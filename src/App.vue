@@ -1,9 +1,10 @@
 <script setup>
 import VidoeChat from "./components/VidoeChat.vue";
+import Home from "./pages/Home.vue";
 </script>
 
 <template>
-  <VidoeChat />
+  <Home />
 </template>
 
 <style scoped>
