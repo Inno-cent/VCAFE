@@ -1,23 +1,23 @@
-// <template>
-//   <div class="flex flex-col items-center gap-4 p-6">
-//     <h1 class="text-2xl font-bold">WebRTC Video Chat</h1>
+<template>
+  <div class="flex flex-col items-center gap-4 p-6">
+    <h1 class="text-2xl font-bold">WebRTC Video Chat</h1>
 
-//     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
-//       <video ref="localVideo" autoplay muted playsinline class="w-full rounded-lg shadow" />
-//       <video ref="remoteVideo" autoplay playsinline class="w-full rounded-lg shadow" />
-//     </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+      <video ref="localVideo" autoplay muted playsinline class="w-full rounded-lg shadow" />
+      <video ref="remoteVideo" autoplay playsinline class="w-full rounded-lg shadow" />
+    </div>
 
-//     <div class="flex gap-4 mt-6">
-//       <button @click="joinRoom" class="px-4 py-2 bg-blue-600 text-white rounded">Join Call</button>
-//       <button @click="toggleMic" class="px-4 py-2 bg-gray-700 text-white rounded">
-//         {{ isMicMuted ? 'Unmute' : 'Mute' }}
-//       </button>
-//       <button @click="toggleCamera" class="px-4 py-2 bg-gray-700 text-white rounded">
-//         {{ isCameraOff ? 'Turn Camera On' : 'Turn Camera Off' }}
-//       </button>
-//     </div>
-//   </div>
-// </template>
+    <div class="flex gap-4 mt-6">
+      <button @click="joinRoom" class="px-4 py-2 bg-blue-600 text-white rounded">Join Call</button>
+      <button @click="toggleMic" class="px-4 py-2 bg-gray-700 text-white rounded">
+        {{ isMicMuted ? 'Unmute' : 'Mute' }}
+      </button>
+      <button @click="toggleCamera" class="px-4 py-2 bg-gray-700 text-white rounded">
+        {{ isCameraOff ? 'Turn Camera On' : 'Turn Camera Off' }}
+      </button>
+    </div>
+  </div>
+</template>
 
 <script setup>
 import { ref, onBeforeUnmount } from 'vue'
