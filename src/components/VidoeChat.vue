@@ -21,7 +21,7 @@
 
 <script setup>
 import { ref, onBeforeUnmount } from 'vue'
-
+import { io } from 'socket.io-client'
 
 const socket = io('http://localhost:5000') // Update with server URL if deployed
 
